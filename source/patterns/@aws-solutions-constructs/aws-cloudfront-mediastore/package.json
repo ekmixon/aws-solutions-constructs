@@ -54,8 +54,8 @@
   },
   "dependencies": {
     "@aws-cdk/core": "0.0.0",
-    "@aws-cdk/aws-cloudfront": "0.0.0",
-    "@aws-cdk/aws-mediastore": "0.0.0",
+    "@aws-cdk/aws-cloudfront": "1.110.0",
+    "@aws-cdk/aws-mediastore": "1.110.0",
     "@aws-cdk/aws-s3": "0.0.0",
     "@aws-cdk/aws-lambda": "0.0.0",
     "@aws-solutions-constructs/core": "0.0.0",
