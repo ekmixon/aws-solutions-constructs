@@ -54,8 +54,8 @@
   },
   "dependencies": {
     "@aws-cdk/aws-iam": "0.0.0",
-    "@aws-cdk/aws-kinesisfirehose": "0.0.0",
-    "@aws-cdk/aws-events": "0.0.0",
+    "@aws-cdk/aws-kinesisfirehose": "1.110.0",
+    "@aws-cdk/aws-events": "1.110.0",
     "@aws-cdk/core": "0.0.0",
     "@aws-cdk/aws-s3": "0.0.0",
     "@aws-cdk/aws-logs": "0.0.0",
