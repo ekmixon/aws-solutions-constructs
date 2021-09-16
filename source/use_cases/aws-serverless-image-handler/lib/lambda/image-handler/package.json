@@ -15,9 +15,9 @@
   "devDependencies": {
     "aws-sdk": "^2.437.0",
     "aws-sdk-mock": "^4.4.0",
-    "mocha": "^6.1.4",
+    "mocha": "^8.3.0",
     "sinon": "^7.3.2",
-    "nyc": "^14.0.0"
+    "nyc": "^15.0.0"
   },
   "scripts": {
     "pretest": "npm run build:init && npm install",
