@@ -16,7 +16,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.14.0",
     "@typescript-eslint/parser": "^2.14.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.16.0",
     "eslint-import-resolver-node": "^0.3.2",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.19.1",
@@ -29,7 +29,7 @@
     "typescript": "~3.9.7"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^4.0.0"
   },
   "workspaces": {
     "packages": [
