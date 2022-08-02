@@ -62,8 +62,8 @@ class RecordGenerator(object):
     def get_ventilator_records(self, rate, fake):
         return [self.get_ventilator_record(fake) for _ in range(rate)]
 
-    def dumps_lines(objs):
-        for obj in objs:
+    def dumps_lines(self):
+        for obj in self:
             yield json.dumps(obj, separators=(",", ":")) + "\n"
 
 

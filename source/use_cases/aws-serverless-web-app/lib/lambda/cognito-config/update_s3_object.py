@@ -8,12 +8,12 @@ logger.setLevel(logging.INFO)
 s3 = boto3.resource('s3')
 
 def on_event(event, context):
-  logger.info("Received event: %s" % json.dumps(event))
+  logger.info(f"Received event: {json.dumps(event)}")
   request_type = event['RequestType']
   if request_type == 'Create': return on_create(event)
   if request_type == 'Update': return on_create(event)
   if request_type == 'Delete': return
-  raise Exception("Invalid request type: %s" % request_type)
+  raise Exception(f"Invalid request type: {request_type}")
 
 def on_create(event):
   properties = event['ResourceProperties']
@@ -37,7 +37,7 @@ def on_create(event):
           }
       };
       """
-    config_content = config_content % (userPoolId, clientId, region, restapi)
+    config_content %= (userPoolId, clientId, region, restapi)
     config = s3.Object(bucket,'js/config.js')
     config.put(Body=config_content)
   except ClientError as e:

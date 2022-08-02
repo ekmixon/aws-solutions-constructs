@@ -9,12 +9,12 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 def on_event(event, context):
-  logger.info("Received event: %s" % json.dumps(event))
+  logger.info(f"Received event: {json.dumps(event)}")
   request_type = event['RequestType']
   if request_type == 'Create': return on_create(event)
   if request_type == 'Update': return on_create(event)
   if request_type == 'Delete': return on_delete(event)
-  raise Exception("Invalid request type: %s" % request_type)
+  raise Exception(f"Invalid request type: {request_type}")
 
 def on_create(event):
   source_bucket = event['ResourceProperties']['SourceBucket']

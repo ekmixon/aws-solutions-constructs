@@ -12,6 +12,7 @@
  *
 """
 
+
 import base64
 import datetime
 import sys
@@ -40,9 +41,9 @@ output_path = args["output_path"]
 databasename = args["database_name"]
 tablename = args["table_name"]
 
-s3_target = output_path + "ventilator_metrics"
-checkpoint_location = output_path + "cp/"
-temp_path = output_path + "temp/"
+s3_target = f"{output_path}ventilator_metrics"
+checkpoint_location = f"{output_path}cp/"
+temp_path = f"{output_path}temp/"
 
 
 def processBatch(data_frame, batchId):
